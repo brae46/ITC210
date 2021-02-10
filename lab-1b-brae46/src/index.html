@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IT210 Lab 2</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"><!-- Links to stylesheets -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="css/style1.css">
+  </head>
+
+  <body>
+    <header>
+      <!--<h1>IT210 Lab 2</h1>-->
+    </header>
+    <nav class="navbar navbar-expand-lg navbarbackground">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a id= navtitle class="nav-link" href="#">IT210 Lab 2 <span class="sr-only">(current)</span></a>
+          </li>
+          
+           <!--<li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+        </form>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <div class="container">
+      <article>
+        <h2 id=tasktitle >Tasks</h2>
+        <span class="custom-switch">
+          <input type="checkbox" class="custom-control-input" id="customSwitch1">
+          <label class="custom-control-label" for="customSwitch1">Sort By Date</label>
+        </span>
+        <span id= switch class="custom-switch">
+          <input type="checkbox" class="custom-control-input" id="customSwitch2">
+          <label class="custom-control-label" for="customSwitch2">Filter Completed Tasks</label>
+        </span>
+      </article>
+      <br>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <span id=squarebox class="material-icons">crop_square</span>
+          <!-- <input type='checkbox'> -->
+          <span class= "testtext">Test 1</span> 
+          <span id= removebutton class="material-icons">remove_circle</span>
+          <span class= "testdate"> 09-20-2020 </span>
+          <!--<button type="button">Click Me!</button>-->
+        </li>
+        <li class="list-group-item">
+          <span id=squarebox class="material-icons">crop_square</span>
+          <!-- <input type='checkbox'> -->
+          <span class= "testtext" >Test 2</span> 
+          <span id= removebutton class="material-icons">remove_circle</span>
+          <span class= "testdate"> 09-20-2020 </span>
+          <!--<button type="button">Click Me!</button>-->
+        </li>
+        <li class="list-group-item">
+          <i id = checkbox class="material-icons">check_box</i>
+          <!-- <input type='checkbox'> -->
+          <span id=completetask class= "testtext" ><strike>Test 3</strike></span> 
+          <span id= removebutton class="material-icons">remove_circle</span>
+          <span class= "testdate"> 09-20-2020 </span>
+          <!--<button type="button">Click Me!</button>-->
+        </li>
+      </ul>
+      <br>
+      <br>
+      <div>
+        <!--<ul id= createtask class="list-group">
+          <li class="list-group-item">
+            <span id=newtask >Test 4</span> 
+          </li>
+          <br>
+          <li class="list-group-item">
+            <span id=newdate > 09-25-2020 </span>
+            <span id=cancelbutton class="material-icons">cancel</span>
+          </li>
+          <br>
+          <li >
+            <button id=taskbutton type="button" class="btn btn-dark">Create Task</button>
+          </li>
+        </ul>-->
+        <!--<form>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+          </div>
+          
+          <div class="input-group mb-3">
+            <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+          </div>
+          <br>
+          <button id=taskbutton type="button" class="btn btn-dark">Create Task</button>
+        </form> -->
+        <form>
+          <div class="form-group">
+            <!--<label for="exampleInputEmail1">Email address</label> -->
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Task Name" required>
+          </div>
+          <div class="form-group">
+            <input type="date" class="form-control" id="exampleInputPassword1" placeholder="Date" required>
+          </div>
+          <button id=taskbutton type="submit" class="btn btn-primary">Create Task</button>
+        </form>
+       
+      </div>
+
+    
+    
+    </div>  
+  </body>
+
+</html>
